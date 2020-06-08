@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>YouTube downloader</title>
+        <script type="text/javascript" src="/eel.js"></script>
+    </head>
+    </html>
+    <body>
+        <h1> YouTube Downloader app</h1>
+        <input type="text" id= "YouTube" placeholder="type link here"/>
+        <input type="text" id= "user" placeholder="name of user on computer"/>
+        <button onclick="download()">download</button>
+        <script>
+           function download(){
+                eel.download(document.getElementById("YouTube").value, document.getElementById("user").value);
+           }
+        </script>
+    </body>
+
+</html>
